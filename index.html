@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Omar Mohamed</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Omar</a>
+      <nav class="navigation">
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="main">
+      <div>
+        <h2>Hello, I'm Omar Mohamed<br /><span>Back-End Developer </span></h2>
+        <h3>
+          I specialize in creating efficient, scalable, and secure back-end
+          solutions that power web applications and services. With a focus on
+          performance and reliability, I develop server-side logic and APIs that
+          meet diverse business needs.
+        </h3>
+        <a href="#projects" class="main-btn">View my work</a>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/omar-mohamed-b44569322/"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://www.youtube.com/@OmarMohamed-l6x"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <a href="https://github.com/omardev11"
+            ><i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cards" id="services">
+      <h2 class="title">Services</h2>
+      <div class="content">
+        <div class="card">
+          <div class="icon">
+            <img
+              src="images/backend-coding.png"
+              alt=""
+              width="150"
+              height="150"
+            />
+            <!-- <i class="">  </i> -->
+          </div>
+          <div class="info">
+            <h3>Back-End Development</h3>
+            <p>
+              Focused on building robust server-side solutions with C# .NET,
+              RESTful APIs, and SQL databases.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <img src="images/database.png" alt="" width="150" height="150" />
+          </div>
+          <div class="info">
+            <h3>Database Design & Management</h3>
+            <p>
+              Skilled in designing and managing databases using SQL Server,
+              optimizing queries, and ensuring data consistency and efficiency
+              for high-performance applications.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <img src="images/desktops.png" alt="" width="150" height="150" />
+          </div>
+          <div class="info">
+            <h3>Desktop Application Development</h3>
+            <p>
+              Experienced in building desktop applications using C# and the .NET
+              Framework for various functionalities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2 class="title">Projects</h2>
+      <div class="content">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/Logo For DVLD.png" />
+          </div>
+          <div class="project-info">
+            <p class="project-category">
+              Efficiently manage driving license applications, tests, renewals,
+              detentions, and replacements with a user-friendly C# Windows Forms
+              and SQL Server system
+            </p>
+            <strong class="project-title">
+              <span>Driving Vehicle License Department System </span>
+              <a
+                href="javascript:void(0)"
+                id="FirstProject"
+                class="more-details"
+                >More details</a
+              >
+            </strong>
+          </div>
+        </div>
+
+        <!-- Modal Template -->
+        <div id="projectModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h1 id="modalTitle"></h1>
+            <p id="modalDescription"></p>
+            <br />
+            <p><strong>Tools Used:</strong> <span id="modalTools"></span></p>
+            <br />
+            <a id="modalDemo" href="#" target="_blank">Watch Demo</a>
+            <br />
+            <br />
+            <a id="SourceCode" href="#" target="_blank">Source Code</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/luxFeastLogo.webp" />
+          </div>
+          <div class="project-info">
+            <p class="project-category">
+              A full-stack restaurant management system integrating a
+              pre-designed front-end template with a custom back-end API for
+              menu, order, and user management.
+            </p>
+            <strong class="project-title">
+              <span>Restaurant Management System </span>
+              <a
+                href="javascript:void(0)"
+                class="more-details"
+                id="ProjectSeven"
+                >More details</a
+              >
+            </strong>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/PIzza.webp" />
+          </div>
+          <div class="project-info">
+            <p class="project-category">
+              Customizable pizza-ordering system built using C# and Windows
+              Forms, offering dining and takeout options.
+            </p>
+            <strong class="project-title">
+              <span>Pizza Project</span>
+              <a href="javascript:void(0)" class="more-details" id="ProjectTwo"
+                >More details</a
+              >
+            </strong>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/Tic Tac Toe.jpg" />
+          </div>
+          <div class="project-info">
+            <p class="project-category">
+              Classic two-player Tic Tac Toe game built using C# and Windows
+              Forms
+            </p>
+            <strong class="project-title">
+              <span>Tic Tac Toe Game</span>
+              <a
+                href="javascript:void(0)"
+                class="more-details"
+                id="ProjectThree"
+                >More details</a
+              >
+            </strong>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/bank.jpg" />
+          </div>
+          <div class="project-info">
+            <p class="project-category">
+              Easily manage accounts, deposits, and withdrawals with user
+              authentication
+            </p>
+            <strong class="project-title">
+              <span>Bank System OOP</span>
+              <a href="javascript:void(0)" class="more-details" id="ProjectFive"
+                >More details</a
+              >
+            </strong>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/Atm.jpg" />
+          </div>
+          <div class="project-info">
+            <p class="project-category">
+              Access quick withdrawals, normal withdrawals, deposits, and
+              balance inquiries effortlessly.
+            </p>
+            <strong class="project-title">
+              <span>ATM System</span>
+              <a href="javascript:void(0)" class="more-details" id="ProjectFour"
+                >More details</a
+              >
+            </strong>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="images/rock.jpg" />
+          </div>
+          <div class="project-info">
+            <p class="project-category">
+              A simple yet fun game of strategy, luck, and quick decisions.
+              Using C++
+            </p>
+            <strong class="project-title">
+              <span>Rock paper scissors Game</span>
+              <a href="javascript:void(0)" class="more-details" id="ProjectSix"
+                >More details</a
+              >
+            </strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cards contact" id="contact">
+      <h2 class="title">Let's work together</h2>
+      <div class="content">
+        <div class="card">
+          <div class="icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="info">
+            <h3>Phone</h3>
+            <p>+252 617147483</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="info">
+            <h3>Email</h3>
+            <p>omar.fullstack.dev11@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="footer-title">Copyrights @ <span>Omar Mohamed</span></p>
+      <div class="social-icons">
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/omar-mohamed-b44569322/"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a target="_blank" href="https://www.youtube.com/@OmarMohamed-l6x"
+          ><i class="fab fa-youtube"></i
+        ></a>
+        <a target="_blank" href="https://github.com/omardev11"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
